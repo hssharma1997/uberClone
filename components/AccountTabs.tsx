@@ -31,7 +31,7 @@ const AccountTabs = () => {
 
     const Tab = ({ item }: TabPropsType) => {
         return (
-            <View style={{ backgroundColor: '#d7d9d7',width:90,borderRadius:12,alignItems:'center',padding:14 }}>
+            <View style={{ backgroundColor: '#F5F5F5',width:90,borderRadius:12,alignItems:'center',padding:14 }}>
                 <FontAwesome5Icons name={item.image} size={32} color='#000' />
                 <Text style={{fontWeight:'bold',marginTop:6,color:'#000'}}>{item.title}</Text>
             </View>
@@ -40,7 +40,7 @@ const AccountTabs = () => {
 
     const SafetyCheckup=()=>{
         return(
-            <View style={{backgroundColor:'#d7d9d7',borderRadius:12,padding:18,marginVertical:24}}>
+            <View style={{backgroundColor:'#F5F5F5',borderRadius:12,padding:18,marginVertical:24}}>
                 <View>
                     <Text style={{fontSize:18,color:'#000',fontWeight:'bold'}}>Safety Checkup</Text>
                     <Text style={{fontSize:13}}>

@@ -16,6 +16,6 @@ export const Heading=({title,size=18}:HeadingPropTypes)=>{
 
 export const Divider=()=>{
     return (
-        <View style={{height:8,backgroundColor:'#d7d9d7'}}/>
+        <View style={{height:8,backgroundColor:'#F5F5F5'}}/>
     )
 }

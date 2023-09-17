@@ -7,12 +7,15 @@ import ActivityScreen from '../Screens/Service';
 import Account from '../Screens/Account';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesomeIcons from 'react-native-vector-icons/FontAwesome';
+import { HomeScreenNavigator } from './HomeStack';
+import {NavigationContainer} from '@react-navigation/native'
 
 const BottomTabNavigation = () => {
     const Tab = createMaterialBottomTabNavigator();
   return (
+  
     <Tab.Navigator  
-    initialRouteName="Home"
+    // initialRouteName="Home"
     activeColor="#000000"
     inactiveColor="#a7aba8"
     barStyle={{ backgroundColor: '#fff' }}
@@ -59,6 +62,7 @@ const BottomTabNavigation = () => {
       }}
      />
   </Tab.Navigator>
+  
   )
 }
 

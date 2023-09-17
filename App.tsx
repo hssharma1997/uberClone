@@ -12,11 +12,14 @@ import {AppState} from 'react-native';
 
 
 
+
 function App(): JSX.Element { 
   const [locationEnabled,setLocationEnabled]=useState(false)
 
   useEffect(() => {
     const subscription = AppState.addEventListener('change', (nextAppState) => {
+      console.log(nextAppState,'nextAppState');
+      
       // if app is foreground.
       if (nextAppState === 'active') {
         DeviceInfo.isLocationEnabled().then((enabled: boolean) => {
